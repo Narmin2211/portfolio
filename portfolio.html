@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Square Peg' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Shippori Mincho' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Spectral SC' rel='stylesheet'>
+<style>
+#neubar {
+      background: #7BEFFF;
+      
+    }
+    
+    .nav-item .active {
+      border-radius: 6px;
+      background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
+      box-shadow:  4px 4px 8px #ddc1a0,
+                   -4px -4px 8px #f7e5cc;
+    }
+    #neubar .dropdown-menu a:hover {
+      color: #454545
+    }
+    #neubar .nav-item {
+      margin : auto 1%;
+     
+    }
+    #neubar a {
+      color: rgb(17, 81, 91);
+      padding-left:12px;
+      padding-right:1px;
+    }
+    #neubar .dropdown-menu {
+      background : #545454
+    }
+    a.navbar-brand {
+      color: #454545
+
+    }
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+    #home{
+        height:800px;
+        width:100%;
+        background: rgb(119,255,254);
+        background: linear-gradient(184deg, #7BEFFF 17.34%, rgba(165, 244, 255, 0.00) 67%);
+        padding-top: 10%;
+
+    }
+    #h1{
+        font-size: 50px;
+        font-family: 'Shippori Mincho';font-size: 40px;
+        color: #59B9BF;
+        font-weight:bold;
+        padding-left: 40%; animation: fadeIn 1.5s ease-in-out;
+      
+    }
+    #h2{
+      font-family: 'Square Peg';
+        font-size: 70px;
+        color:#3ab3ad;
+        font-weight:lighter;
+        padding-left: 25%;  
+      
+        font-size: 120px; animation: fadeIn 3s ease-in-out;
+    
+        
+    }
+  
+    #h3{
+      font-family: 'Shippori Mincho';font-size: 40px;
+      padding-left: 25%;
+      color: #59ADBF; animation: fadeIn 4s ease-in-out;
+
+    }
+    #b1{
+      height: 50px;
+      width: 200px;
+      border-radius: 25px;
+      background: #2A7E91;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 13px;
+      border: none; animation: fadeIn 4.5s ease-in-out;
+      
+    }
+    #h4{
+      padding-left: 20%;
+    }
+@media (max-width: 768px) {
+    #h1 {
+        font-size: 25px;
+    }
+    #h2 {
+        font-size: 55px;
+        padding-left: 45px;
+    }
+    #h3 {
+        font-size: 20px;
+      padding-left: 35px;
+
+    }
+    #home {
+        padding-top: 50%;
+        width: 100%;
+        height: 600px;
+    }
+    #b1{
+      height: 35px;
+      width: 100px;
+      font-size: 10px;
+      text-align:center;
+      padding-bottom: 20px;
+    }
+   
+}
+#about{
+        height:800px;
+        width:100%;
+        background: rgb(119,255,254);
+        background: linear-gradient(20deg, #7BEFFF 17.34%, rgba(165, 244, 255, 0.00) 67%);
+        padding-top: 10%;
+
+}
+
+#about_row1{
+        font-family: 'Square Peg';
+        font-size: 100px;
+        color:#2b716e;
+        padding-left: 20%;
+
+} 
+#about_row2{
+        font-family: 'Shippori Mincho';
+        font-size: 20px;
+        color:#2b716e;
+        padding-left: 20%;
+        padding-top: 5%;
+
+} 
+#about_row3{
+        font-family: 'Shippori Mincho';
+        font-size: 15px;
+        color:#3c737c;
+        padding-left: 20%;
+        padding-top: 10%;
+        font-weight:normal;
+
+} 
+#about_col2{
+  height: 300px;
+  width: 450px;
+  padding-left: 20%;
+  
+}
+@media (max-width: 768px) {
+  #about_row1{
+        font-family: 'Square Peg';
+        font-size: 60px;
+        color:#2b716e;
+        padding-left: 20%;
+  }
+  #about_row2{
+        font-family: 'Shippori Mincho';
+        font-size: 15px;
+        color:#2b716e;
+        padding-left: 20%;
+        padding-top: 5%;
+
+} 
+#about_row3{
+        font-family: 'Shippori Mincho';
+        font-size: 10px;
+        color:#2b716e;
+        padding-left: 20%;
+        padding-top: 10%;
+
+} 
+#about_col2{
+  height: 300px;
+  width: 350px;
+  padding-left: 10%;
+  
+}
+}
+#service{
+        height:800px;
+        width:100%;
+        background: rgb(119,255,254);
+        background: linear-gradient(160deg, #7BEFFF 17.34%, rgba(165, 244, 255, 0.00) 75%);
+} 
+#s_heading{
+      font-family: 'Square Peg';
+        font-size: 100px;
+        color:#2b716e;
+        text-align: center;
+}
+#s_heading2{
+  font-size: 20px;
+  font-family: 'Spinnaker';
+  padding: 5%;
+  text-align: center;
+}
+#service_row{
+  padding-left: 5%;
+  padding-bottom: 35%;
+  text-align:center;
+  width: 100%;
+}
+#s_content{
+  font-size: 15px;
+  padding-top: 5%;
+  text-align: center;
+  padding-left: 5%;
+}
+@media (max-width: 768px) {
+  #s_heading{
+      font-family: 'Square Peg';
+        font-size: 70px;
+        color:#2b716e;
+        text-align: center;
+}
+#s_heading2{
+  font-size:15 px;
+  font-family: 'Spinnaker';
+  padding: 5%;
+  text-align: center;
+}
+#service_row{
+  padding-left: 5%;
+  padding-bottom: 35%;
+  text-align:center;
+  width: 100%;
+}#s_content{
+  font-size: 13px;
+  padding-top: 5%;
+  text-align: center;
+  padding-left: 5%;
+}
+#service_col{
+  justify-content: center;
+}
+#service{
+        height:1200px;
+        width:100%;       
+}
+}
+#portfolio{
+        height:700px;
+        width:100%;
+        
+}
+#p_heading{
+      font-family: 'Square Peg';
+        font-size: 100px;
+        color:#2b716e;
+        text-align: center;
+}
+#p_row{
+  text-align: center;
+  justify-content:center; 
+  
+
+}
+#p_row2{
+  justify-content: center; 
+
+}
+#pc1{
+  background-color: #9af3ff;
+  height: 240px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+   
+   
+}
+@media (max-width: 768px) {
+  #portfolio{
+        height:1200px;
+        width:100%;
+        
+}
+#p_heading{
+      font-family: 'Square Peg';
+        font-size: 80px;
+        color:#2b716e;
+        text-align: center;
+}
+#p_row{
+  text-align: center;
+  justify-content:center; 
+  padding-left: 5%;
+
+}
+#p_row2{
+  justify-content: center; 
+  margin-left: 5%;
+}
+}
+#contact{
+        height:500px;
+        width:100%; 
+        background-color: #9af3ff;
+        position: relative;      
+}
+#ch1{
+  padding-left: 10%;
+  padding-top: 15%;
+  font-size: 25px;
+  font-weight: bold;
+  color: #CECECE;
+}
+#ch2{
+  padding-left: 10%;
+  font-size: 45px;
+  padding-bottom: 2%;
+  font-family: 'Sofia Sans';
+  color: #34B1B9;
+  font-weight: bold;
+}
+#ch3{
+  padding-left: 10%;
+  font-size: 20px;
+  /* padding-bottom: 10%; */
+  font-family: 'Source Sans Pro';
+  color: #143568;
+  font-weight: lighter;
+}
+#contact_col{
+  background-color: #f3fcff;
+  position: absolute;
+  height: 500px;width: 350px;
+  margin-left: 50%;margin-top: 15%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border-radius: 20px;
+}
+#contact_row{
+  background-color: white;
+  height: 400px;width: 100%;
+  margin-top: 50px;
+}
+#ch4{
+  font-size: 25px;
+  color: #0d6e75;
+  font-family: 'Spectral SC';
+  font-weight: bold;
+}
+#input{
+  border-color: #f3fcff;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  background-color: #f3fcff;border-right: #f3fcff;border-left:#f3fcff;border-top: #f3fcff;
+  margin-top: 40px;
+  /* padding-top: 40px; */
+  border-width: 0.1px;
+  padding-left: 10px;
+}
+#b2{
+  margin-top: 60px;background: #5499B7;height: 35px;border: none;border-radius: 10px;
+  /* margin-left: 20%; */
+  color: white;
+  font-weight: bold;
+  font-family: 'Spectral SC';
+
+}
+@media (max-width: 768px) {
+  #contact{
+        height:500px;
+        width:100%; 
+        background-color: #9af3ff;
+        position: relative;
+        margin-top: 10%;      
+} #ch1{
+  padding-left: 10%;
+  padding-top: 10%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #CECECE;
+}
+#ch2{
+  padding-left: 10%;
+  font-size: 35px;
+  /* padding-bottom: 2%; */
+  font-family: 'Sofia Sans';
+  color: #34B1B9;
+  font-weight: bold;
+}
+#ch3{
+  padding-left: 10%;
+  font-size: 15px;
+  /* padding-bottom: 10%; */
+  font-family: 'Source Sans Pro';
+  color: #143568;
+  font-weight: lighter;
+}#contact_row{
+  background-color: rgb(255, 255, 255);
+  height: 400px;width: 100%;
+  
+  margin-top: 150px;
+  margin-left: 12px;
+  z-index: 0;
+}#contact_col{
+  background-color: #f3fcff;
+  position: absolute;
+  height: 450px;width: 300px;
+  margin-left: 15%;margin-top: 18rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border-radius: 20px;
+  z-index: 15;
+}
+ }
+ #footer{
+  height: 200px;
+  width: 100%;
+  background-color: #69acb1;
+  /* position: absolute; */
+  margin-top: 20%;
+  z-index: 10;
+  
+ }
+ #f_c1{
+  margin-top: 30px;
+  /* margin-left: 10px; */
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: rgb(219, 219, 219);
+ }
+ @media (max-width: 768px) {
+  #footer{
+  height: 150px;
+  width: 100%;
+  background-color: #69acb1;
+  /* position: absolute; */
+  margin-top: 20rem;
+  z-index: 10;
+
+  
+ }
+ #f_c1{
+  margin-top: 30px;
+  /* margin-left: 10px; */
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 9px;
+  color: rgb(219, 219, 219);
+ }
+ #social_icons{
+  height: 30px;
+    width: 30px;
+    justify-content:space-between;
+
+ }
+}
+
+</style>
+</head>
+<body>
+     <!-- navbar opening -->
+<div class="row">
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="neubar">
+      
+        <div class="container" >
+          <a class="navbar-brand" href="#">
+            <img src="./an.png" height="70" width="150px"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link mx-2 " aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+  
+     <!-- navbar closing -->
+
+     <!-- home div opening -->
+
+     <!-- <div class="row" id="home"> -->
+      <div class="container-fluid" id="home">
+        <div class="col p-3 " style="height: 500px; margin-left: 5%;">
+           <div class="row" id="h1" >
+            HEY!!</div>
+            <div class="row" id="h2">
+                I Am Aysha Narmin</div>
+            <div class="row" id="h3">
+              FRONTEND WEB DESIGNER</div>   
+            <div class="row" style="padding-left: 38%;padding-top:50px;">
+              <a href="#contact" id="b1" > GET IN TOUCH</a>
+            </div> 
+        </div>
+
+     </div>
+     <!-- home div closing -->
+
+     <!-- about div opening -->
+     <div class="row" id="about">
+      <div class="col" id="about_col">
+        <div class="row"  id="about_row1">
+             About Me
+        </div>
+        <div class="row"id="about_row2">
+          I SPECIALISE IN DESIGNING APPS, WEBSITES.<br> OCCASIONALLY I ALSO CODE WEBSITES.
+        </div>
+        <div class="row"id="about_row3">
+          I'm Aysha Narmin, a passionate web developer and website designer with expertise in front-end development, 
+          UI/UX design, and e-commerce solutions.<br> With a keen eye for detail and a client-centric approach, I aim to
+           create visually appealing websites that provide seamless user experiences.<br><br> My dedication to continuous
+            learning keeps me up-to-date with the latest industry trends and best practices.<br>Let's collaborate
+           to turn your creative ideas into a captivating online reality. Get in touch and let's build something remarkable together!
+        </div>
+
+      </div>
+      <div class="col" >
+        <img src="./ee.jpg" alt="" id="about_col2">
+      </div>
+
+     </div>
+     <!-- about div closing -->
+
+     <!-- service div opening -->
+     <div class="row" id="service">
+       <h1 id="s_heading"> Services</h1>
+        <div class="row" id="service_row">
+          <div class="col p-5" id="service_col">
+            <img src="./a2.png" alt="" style="height: 70px;width: 70px;">
+          <h4 id="s_heading2">
+            WEBSITE DESIGNING
+          </h4>
+        <p id="s_content">
+          Crafting captivating websites that speak your brand's language. Custom designs, seamless user experiences, and standout visuals. 
+          Elevate your online presence with me. Let's create something remarkable together. Contact now.
+        </p></div>
+          <div class="col p-5" id="service_col">
+            <img src="./a1.png" alt=""style="height: 70px;width: 70px;">
+          <h4 id="s_heading2">
+            WEB DEVELOPMENT
+          </h4>
+          <p id="s_content">
+            Empowering your digital presence with cutting-edge web development solutions. 
+            From interactive interfaces to high-performance functionalities, Expertise in front-end and back-end technologies to ensure a seamless user experience.
+             Let's build your web vision into reality. Contact us to get started.
+          </p></div>
+          <div class="col p-5" id="service_col">
+            <img src="./a3.png" alt=""style="height: 70px;width: 70px;">
+          <h4 id="s_heading2">
+            UI/UX DESIGNS
+          </h4>
+          <p id="s_content">
+            Unleashing the power of user-centric design. Intuitive interfaces that delight your visitors.
+             Seamlessly blending aesthetics with functionality. Elevate your user experience.
+             Let's create an engaging journey for your users. Get in touch to transform your digital landscape.
+          </p></div>
+        </div>
+
+     </div>
+  
+     <!-- service div closing -->
+
+     <!-- portfolio div opening -->
+
+     <div class="row" id="portfolio">
+      <h1 id="p_heading"> Portfolio</h1>
+          <div class="row" id="p_row" >
+           <div class="col-auto mb-3 "><button type="button" class="btn btn-outline-info" style=" height: 40px;width: 80px;">All</button></div>
+           <div class="col-auto mb-3"><button type="button" class="btn btn-outline-info">Websites</button></div>
+           <div class="col-auto mb-3"><button type="button" class="btn btn-outline-info">Designs</button></div>
+          </div>
+
+          <div class="row" id="p_row2" >
+            <div class="col col-lg-2 col-sm-9 p-5 m-5" id="pc1" ></div>
+            <div class="col col-lg-2 col-sm-9 p-5 m-5"id="pc1" ></div>
+            <div class="col col-lg-2 col-sm-9 p-5 m-5"id="pc1" ></div>
+          
+          </div>
+     </div>
+     <!-- portfolio div closing -->
+
+     <!-- contact div opening -->
+     <div class="row" id="contact">
+      
+      <h4 id="ch1">CONTACT ME</h4>
+      <h1 id="ch2"> LETS DISCUSS YOUR<br> PROJECT</h1>
+      <h6 id="ch3">Always available for freelancing if<br> the right project comes along,<br> Feel free to contact me.</h6>
+      <div class="col-5 " id="contact_col" >
+        <h3 id="ch4">SEND ME A MESSAGE</h3>
+        <div class="row" ><br>
+       <input type="text" placeholder="Name" id="input" >
+       <input type="text" placeholder="Email" id="input" >
+       <input type="text" placeholder="Subject" id="input" >
+       <input type="feedback" placeholder="Message" id="input" >
+       <button type="submit"id="b2" >SUBMIT</button>
+      </div>
+      </div>
+      <div class="row" id="contact_row" ></div>
+     </div>
+     
+     <!-- contact div closing -->
+
+     <!-- footer-->
+     <div class="row" id="footer">
+      <div class="col" id="f_c1">
+        Where to find me<br>
+        _____________<br>
+        <br>
+        Kerala , India
+
+      </div>
+      <div class="col"id="f_c1">
+        Follow Me<br>
+        _____________<br>
+        <br>
+       <div style="justify-content: space-between;">
+        <button type="submit"  id="social_icons"style=" background-color: #69acb1;border: none;">
+          <img src="./instagram.png"  alt="buttonpng"style="height: 25px;width: 25px;">
+        </button>
+        <button type="submit" id="social_icons"style=" background-color: #69acb1;border: none;">
+          <img src="./whatsapp.png"   alt="buttonpng"style="height: 25px;width: 25px;">
+        </button>
+        <button type="submit" id="social_icons" style=" background-color: #69acb1;border: none;">
+          <img src="./facebook.png"  alt="buttonpng"style="height: 25px;width: 25px;">
+        </button>
+      </div>
+
+      </div>
+      <div class="col"id="f_c1">
+        Contact Me<br>
+        _____________<br>
+        <br>
+        ayshanarmin@gmail.com<br>
+        +9778112208
+
+      </div>
+
+     </div>
+
+
+</div>  
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
